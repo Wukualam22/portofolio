@@ -27,8 +27,8 @@ nav {
     z-index: 11;
 }
 
-nav .logo {
-    height: 100%;
+nav img {
+    height: 60%;
 }
 
 nav ul {
