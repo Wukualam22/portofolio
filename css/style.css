@@ -71,6 +71,10 @@ button * {
     color: white;
 }
 
+#gmbar {
+    align-items: center;
+}
+
 aside h1 {
     align-items: center;
     color: var(--color-4);
@@ -82,7 +86,6 @@ aside h1 {
 
 aside ul {
     color: white;
-    padding-bottom: 12px;
     font-size: 12px;
 }
 
@@ -90,7 +93,6 @@ aside .side-1 {
     background-color: #1B2430;
 }
 
-/* Hamburger Menu */
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -127,6 +129,7 @@ article .kata-1 {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 article .kata-1 p {
@@ -227,7 +230,7 @@ section .skill-1 * {
 }
 
 section .skill {
-    padding: 20px;
+    padding: 20px 20vw  20px 20vw ;
     background-color: var(--color-1);
     text-align: center;
 
@@ -245,10 +248,10 @@ section .skill p {
 }
 
 .lastproject {
+    text-align: center;
     font-size: 16px;
     background-color: var(--color-1);
     color: var(--color-4);
-    text-align: center;
 }
 
 .kata-2 h1 {
@@ -339,11 +342,21 @@ footer {
         align-items: center;
     }
 
-    #gmbar .kata-1 {
-        padding: 20px;
+    .gmbar-top {
+        padding-left: 100px;
     }
 
-    aside{
+    .skill {
+        display: flex;
+    }
+
+    #gmbar .kata-1 {
+        padding: 20px;
+        padding-left: 150px;
+    }
+
+    aside {
+        float: right;
         padding-right: 100px;
     }
 
@@ -381,16 +394,7 @@ footer {
 
 }
 
-@media screen and (min-width: 999px) {
-    aside {
-        float: right;
-    }
-
-    .gmbar-top{
-        padding-left: 100px;
-    }
-
-}
+@media screen and (min-width: 999px) {}
 
 
 
