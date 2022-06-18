@@ -8,13 +8,18 @@
     --color-2: #51557E;
     --color-3: #816797;
     --color-4: #D6D5A8;
+    --color-5: orange;
+    --color-6: rgb(252, 143, 161);
+    --color-7: rgb(104, 104, 245);
 }
 
-body{
+body {
     font-family: Poppins;
+    overflow-x: hidden;
 }
+
 nav {
-    background-color: #1b2430;
+    background-color: var(--color-4);
     font-family: Poppins;
     align-items: center;
     display: flex;
@@ -35,13 +40,16 @@ nav ul {
     display: none;
     text-decoration: none;
     text-align: center;
-    justify-content: space-between;
     list-style: none;
-    position: fixed;
-    flex-direction: column;
-    top: 60px;
     right: 0;
-    background-color: var(--color-1)
+    background-color: var(--color-4);
+    position: fixed;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    top: -390px;
 }
 
 nav li {
@@ -50,7 +58,7 @@ nav li {
 }
 
 nav ul a {
-    color: #d6d5a8;
+    color: var(--color-1);
     text-decoration: none;
 }
 
@@ -63,6 +71,25 @@ button * {
     color: white;
 }
 
+aside h1 {
+    align-items: center;
+    color: var(--color-4);
+    text-align: center;
+    background-color: var(--color-1);
+    padding: auto;
+    margin: auto;
+}
+
+aside ul {
+    color: white;
+    padding-bottom: 12px;
+    font-size: 12px;
+}
+
+aside .side-1 {
+    background-color: #1B2430;
+}
+
 /* Hamburger Menu */
 .menu-toggle {
     display: flex;
@@ -70,6 +97,41 @@ button * {
     height: 20px;
     justify-content: space-between;
     position: relative;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--color-1);
+}
+
+article>* {
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+article .kata-1 {
+    color: var(--color-4);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+article .kata-1 p {
+    color: white;
+    font-size: 12px;
 }
 
 .menu-toggle input {
@@ -87,52 +149,232 @@ button * {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: var(--color-4);
+    background-color: var(--color-1);
     transition: all 0.5s;
 }
 
 .menu-toggle span:nth-child(2) {
     transform-origin: 0 0;
 }
+
 .menu-toggle span:nth-child(4) {
     transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2) {
+.menu-toggle input:checked~span:nth-child(2) {
     transform: rotate(45deg) translate(-1px, -1px);
 }
-.menu-toggle input:checked ~ span:nth-child(4) {
+
+.menu-toggle input:checked~span:nth-child(4) {
     transform: rotate(-45deg) translate(-1px, 0);
 }
-.menu-toggle input:checked ~ span:nth-child(3) {
+
+.menu-toggle input:checked~span:nth-child(3) {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
-    nav ul {
-        position: fixed;
-        display: flex;
-        height: 100px;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        z-index: 10;
-        width: 100%;
-        top: -390px;
-    }
-    body{
-        overflow-x: hidden ;
-    }
+article #project {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--color-4);
 }
-    
+
+#project>* {
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#project img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#project .kata-1 {
+    color: var(--color-4);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#project .kata-1 p {
+    color: white;
+}
+
+#projek {
+    background-color: var(--color-4);
+    align-items: center;
+}
+
+.figma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section .skill-1 * {
+    font-size: 32px;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+section .skill {
+    padding: 20px;
+    background-color: var(--color-1);
+    text-align: center;
+
+}
+
+section .skill h1 {
+    color: var(--color-5);
+    font-size: 24px;
+}
+
+section .skill p {
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+}
+
+.lastproject {
+    font-size: 16px;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    text-align: center;
+}
+
+.kata-2 h1 {
+    color: var(--color-6);
+
+}
+
+.kata-3 h1 {
+    color: var(--color-5);
+
+}
+
+.kata-4 h1 {
+    color: var(--color-7);
+
+}
+
+article .kata-2 {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+}
+
+article .kata-3 {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+}
+
+article .kata-4 {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+}
+
+article p {
+    font-size: 1, 8em;
+    color: white;
+}
+
+footer {
+    background-color: var(--color-4);
+    text-align: center;
+    padding: 10px;
+}
+
+#projek {
+    background-color: var(--color-1);
+}
+
+
+@media screen and (min-width: 800px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        position: static;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    #gmbar {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        background-color: var(--color-1);
+    }
 
 
 
+    #projek {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--color-1);
+    }
+
+    article img {
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        width: auto;
+    }
+
+    article .kata-1 {
+        color: var(--color-4);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #gmbar .kata-1 {
+        padding: 15vw;
+    }
+
+    article .kata-1 p {
+        color: white;
+        font-size: 12px;
+    }
 
 
-
-
-
+}
 
 
 
@@ -214,7 +456,7 @@ nav .contact a:link {
     color: #d6d5a8;
 }
 
-.container-1 {
+article {
     display: flex;
     justify-content: space-around;
 }
@@ -517,7 +759,7 @@ footer {
         color: #d6d5a8;
     }
 
-    .container-1 {
+    article {
         display: flex;
         justify-content: space-around;
     }
@@ -836,7 +1078,7 @@ footer {
         color: #d6d5a8;
     }
 
-    .container-1 {
+    article {
         display: flex;
         justify-content: space-around;
     }
@@ -912,7 +1154,7 @@ footer {
         width: 50vw;
     }
 
-    .container-1 {
+    article {
         background-color: black;
         width: 100vw;
         display: flex;
