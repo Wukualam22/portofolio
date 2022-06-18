@@ -336,9 +336,16 @@ footer {
         flex-direction: row;
         padding: 20px;
         background-color: var(--color-1);
+        align-items: center;
     }
 
+    #gmbar .kata-1 {
+        padding: 20px;
+    }
 
+    aside{
+        padding-right: 100px;
+    }
 
     #projek {
         display: flex;
@@ -364,15 +371,24 @@ footer {
         text-align: center;
     }
 
-    #gmbar .kata-1 {
-        padding: 15vw;
-    }
 
     article .kata-1 p {
         color: white;
         font-size: 12px;
+        text-align: justify;
     }
 
+
+}
+
+@media screen and (min-width: 999px) {
+    aside {
+        float: right;
+    }
+
+    .gmbar-top{
+        padding-left: 100px;
+    }
 
 }
 
