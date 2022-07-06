@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-nav {
+header {
     background-color: var(--color-4);
     font-family: Poppins;
     align-items: center;
@@ -32,11 +32,11 @@ nav {
     z-index: 11;
 }
 
-nav img {
-    height: 60%;
+header img {
+    width: 30%;
 }
 
-nav ul {
+header ul {
     display: none;
     text-decoration: none;
     text-align: center;
@@ -52,23 +52,14 @@ nav ul {
     top: -390px;
 }
 
-nav li {
+header li {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-nav ul a {
+ header ul a {
     color: var(--color-1);
     text-decoration: none;
-}
-
-nav button {
-    background-color: transparent;
-    border: none;
-}
-
-button * {
-    color: white;
 }
 
 #gmbar {
@@ -323,7 +314,7 @@ footer {
         display: none;
     }
 
-    nav ul {
+    header ul {
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -332,6 +323,15 @@ footer {
         position: static;
         font-size: 1.2em;
         font-weight: 600;
+    }
+
+    header img{
+        width: fit-content;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
     }
 
     #gmbar {
@@ -400,6 +400,3 @@ footer {
 
 
 }
-
-
-

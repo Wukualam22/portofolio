@@ -1,5 +1,5 @@
 const toggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
+const nav = document.querySelector('ul');
 
 let isopen = true;
 toggle.addEventListener('click', () => {
